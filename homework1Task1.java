@@ -5,14 +5,17 @@ public class homework1Task1 {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         sc.close();
+        
 
-        if(a < 0) {
+        extracted(a);
+    }
+
+    private static void extracted(int a) {
+        if (a < 0) {
             System.out.println(-1);
-        }
-        else if (a == 0) {
+        } else if (a == 0) {
             System.out.println(1);
-        }
-        else {
+        } else {
             int res = 1;
             for (int i = 2; i <= a; i++) {
                 res *= i;
